@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		710C0009F120808A093C6DB7EF17D23B /* EXBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CEE15C44ED956C2F738BFCCA9651C1 /* EXBrightness.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		468DD17C380D4FDDF351163BA7C36D80 /* EXBrightness-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F725D1DCD7F2A1F4D4B9A5A28DD4056 /* EXBrightness-dummy.m */; };
 		7803FE87F7BE30D89A3CAC157D1533EF /* EXBrightness.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A85FD958B78973442C8E6438A62FB3 /* EXBrightness.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE3483800969788D6C10DE3A8C04F470 /* EXBrightness-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F725D1DCD7F2A1F4D4B9A5A28DD4056 /* EXBrightness-dummy.m */; };
+		D7701D383697C568EF9BB350C677F9B0 /* EXBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CEE15C44ED956C2F738BFCCA9651C1 /* EXBrightness.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +127,7 @@
 			buildConfigurationList = 6A51D28CA6C39A07375DCB1490D553E8 /* Build configuration list for PBXNativeTarget "EXBrightness" */;
 			buildPhases = (
 				F02C7A8EFCAC50B59EF0388015490CFC /* Headers */,
-				7885F5DC6FA117493C62505037440B1F /* Sources */,
+				ABCC5CE27447E72A6389C871AAA370FD /* Sources */,
 				7E89733F4D107463040FD06E0E339F0B /* Frameworks */,
 			);
 			buildRules = (
@@ -172,12 +172,12 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7885F5DC6FA117493C62505037440B1F /* Sources */ = {
+		ABCC5CE27447E72A6389C871AAA370FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3483800969788D6C10DE3A8C04F470 /* EXBrightness-dummy.m in Sources */,
-				710C0009F120808A093C6DB7EF17D23B /* EXBrightness.m in Sources */,
+				468DD17C380D4FDDF351163BA7C36D80 /* EXBrightness-dummy.m in Sources */,
+				D7701D383697C568EF9BB350C677F9B0 /* EXBrightness.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14DD2F140949A7108B405C386E681AD8 /* EXImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D7D89648B80A5C125144CFD5A5979 /* EXImagePicker.m */; };
 		181D23BEEF828E6FF60ACD81D7F78FEA /* EXImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D24174DC48B8FEFD845BB3B3D397D9 /* EXImagePicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		72F8C8A355B68F9A3DDA0DE2314DD774 /* EXImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF6360274B3412E0CC6551104E28CA /* EXImagePicker-dummy.m */; };
-		95CCEA0B3222E6BE1298FCD4B28924E8 /* EXImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D7D89648B80A5C125144CFD5A5979 /* EXImagePicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		60E0B0FE7BD6F6BB889DE83B202312A1 /* EXImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF6360274B3412E0CC6551104E28CA /* EXImagePicker-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,7 +136,7 @@
 			buildConfigurationList = 6911C38D07B6CC4374AD71F417F42BD6 /* Build configuration list for PBXNativeTarget "EXImagePicker" */;
 			buildPhases = (
 				8413932D0288C40496C94D68A81BA69B /* Headers */,
-				A3BB915ECD316381C0A618EEE8D0065C /* Sources */,
+				A0210EE583E675B1E605F528DA8E22FE /* Sources */,
 				FBA007A8E182EA872C74436099EDE963 /* Frameworks */,
 			);
 			buildRules = (
@@ -185,12 +185,12 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A3BB915ECD316381C0A618EEE8D0065C /* Sources */ = {
+		A0210EE583E675B1E605F528DA8E22FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F8C8A355B68F9A3DDA0DE2314DD774 /* EXImagePicker-dummy.m in Sources */,
-				95CCEA0B3222E6BE1298FCD4B28924E8 /* EXImagePicker.m in Sources */,
+				60E0B0FE7BD6F6BB889DE83B202312A1 /* EXImagePicker-dummy.m in Sources */,
+				14DD2F140949A7108B405C386E681AD8 /* EXImagePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

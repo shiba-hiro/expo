@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		048C08E8987C9D2881716B5F6B992A0B /* EXCalendarConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8954AA5546C058D4B70BEB4C413F2256 /* EXCalendarConverter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0D41960EBF2168F339EBB5E05CD17B08 /* EXCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = B21BB592B669BE1FA40DB9FB43F267F2 /* EXCalendar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1F80B74E4CED066B58518A1DCEBABE5F /* EXCalendarConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0BF84D3D7E21DAC3C0A7915BF693A /* EXCalendarConverter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1F9D3466BC0268578C5016A5E76B4349 /* EXCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7BF23EF55562985D788F0D35352E /* EXCalendar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C7C87EF530E9721E3DDF9C673E465C19 /* EXCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A07E73AA27A8B89AE813799048C6D /* EXCalendar-dummy.m */; };
+		AB10AF8B880F121789F748D7A0363060 /* EXCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A07E73AA27A8B89AE813799048C6D /* EXCalendar-dummy.m */; };
+		E1ADB7FD8D3A57801EA6B181AB36165E /* EXCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7BF23EF55562985D788F0D35352E /* EXCalendar.m */; };
+		F2726EA2F33E964251406CD15223C9A2 /* EXCalendarConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0BF84D3D7E21DAC3C0A7915BF693A /* EXCalendarConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +143,7 @@
 			buildConfigurationList = 2734A1329EA747BC73813ED24520FD98 /* Build configuration list for PBXNativeTarget "EXCalendar" */;
 			buildPhases = (
 				D79673B8B1B36AB96CD2A13FFAF6FE8A /* Headers */,
-				F5F60D3FB52512B762A74B5CBFBB7573 /* Sources */,
+				EA45AA4A152419A37EED3C7AA1BBC0FD /* Sources */,
 				8C1C984827A9DE883836394482821913 /* Frameworks */,
 			);
 			buildRules = (
@@ -192,13 +192,13 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F5F60D3FB52512B762A74B5CBFBB7573 /* Sources */ = {
+		EA45AA4A152419A37EED3C7AA1BBC0FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7C87EF530E9721E3DDF9C673E465C19 /* EXCalendar-dummy.m in Sources */,
-				1F9D3466BC0268578C5016A5E76B4349 /* EXCalendar.m in Sources */,
-				1F80B74E4CED066B58518A1DCEBABE5F /* EXCalendarConverter.m in Sources */,
+				AB10AF8B880F121789F748D7A0363060 /* EXCalendar-dummy.m in Sources */,
+				E1ADB7FD8D3A57801EA6B181AB36165E /* EXCalendar.m in Sources */,
+				F2726EA2F33E964251406CD15223C9A2 /* EXCalendarConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
