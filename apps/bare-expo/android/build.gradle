@@ -1,3 +1,5 @@
+import groovy.json.JsonSlurper
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
@@ -21,9 +23,28 @@ buildscript {
     }
 }
 
+def packageJsonFile = new File(rootProject.projectDir, '../package.json')
+def packageJson = new JsonSlurper().parseText(packageJsonFile.text)
+
+ext {
+    reactNativeVersion = packageJson.dependencies["react-native"]
+    downloadsMavenRepo = "$rootDir/build/maven"
+}
+
+afterEvaluate {
+    new File(downloadsMavenRepo).mkdirs()
+}
+
 allprojects {
+    configurations.all {
+        resolutionStrategy.force "com.facebook.react:react-native:${reactNativeVersion}"
+    }
+
     repositories {
         mavenLocal()
+        maven {
+            url downloadsMavenRepo
+        }
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"

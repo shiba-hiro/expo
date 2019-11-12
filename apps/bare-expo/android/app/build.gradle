@@ -219,3 +219,45 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+/**
+ * Download a precompiled version of React Native
+ */
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath 'de.undercouch:gradle-download-task:4.0.0'
+  }
+}
+apply plugin: "de.undercouch.download"
+def downloadsDir = new File(buildDir, "downloads")
+
+afterEvaluate {
+  downloadsDir.mkdirs()
+  // Fetch from NPM
+  def packageUrl = "https://registry.npmjs.org/react-native/-/react-native-${reactNativeVersion}.tgz"
+  def packageDest = new File(downloadsDir, "react-native_${reactNativeVersion}.tar.gz")
+  download {
+    src(packageUrl)
+    overwrite false
+    tempAndMove true
+    dest(packageDest)
+  }
+  copy {
+    from(tarTree(resources.gzip(packageDest.toString()))) {
+      include "package/android/**"
+      eachFile {
+        fcd -> fcd.relativePath = new RelativePath(!fcd.isDirectory(), fcd.relativePath.segments.drop(2))
+      }
+    }
+    into(downloadsMavenRepo)
+  }
+}
+
+task cleanDownloadedReactNative {
+  new File(downloadsMavenRepo).deleteDir()
+}
+
+clean.dependsOn(cleanDownloadedReactNative)
